@@ -5,11 +5,11 @@ export function GridProducts(props){
   
    
     const [ListaProd,SetListaProd]= useState([])
-    console.log(ListaProd)
+    
 
     useEffect(()=>{
         SetListaProd(props.ListaProductos)
-        console.log(ListaProd)
+        
     },[])
     
 

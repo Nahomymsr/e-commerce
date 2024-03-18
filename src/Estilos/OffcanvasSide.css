@@ -1,0 +1,21 @@
+.div-departamento{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    border-bottom: 1px solid #dde4eb;
+
+}
+
+.offcanvas {
+    will-change: transform, box-shadow;
+    transition: transform .4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow .3s ease;
+    box-shadow: none;
+    visibility: visible !important;
+}
+
+@media (min-width: 992px){
+.offcanvas-expand {
+    transform: none !important;
+    z-index: 1031;
+}
+}

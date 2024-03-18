@@ -13,6 +13,23 @@
   }
 }
 
+
+.section{
+  padding-left: 0rem ;
+  padding-top: 5.5rem;
+}
+
+@media (min-width: 992px){
+  .section{
+    padding-left: 25rem ;
+    padding-top: 5.5rem;
+  }
+  
+  }
+
+.shadow{
+  box-shadow: 0 0.125rem 0.3rem -0.0625rem rgba(0,0,0,.03), 0 0.275rem 0.75rem -0.0625rem rgba(0,0,0,.06) !important;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

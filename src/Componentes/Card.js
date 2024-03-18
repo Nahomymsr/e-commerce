@@ -2,7 +2,6 @@ import '../Estilos/Card.css'
 
 export function Card(props){
 
-console.log(props)
  return(
  <div className='Card col-2'>
     <div className='d-flex justify-content-center mt-3'>
