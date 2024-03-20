@@ -1,0 +1,33 @@
+
+@media (min-width: 800px) {
+    
+    #cont-search{
+        width:70%
+    }
+  }
+
+  #Carrito:hover #Dropdown-Carrito{
+
+    display: block;
+    box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0,0,0,.03), 0 0.275rem 1.25rem -0.0625rem rgba(0,0,0,.05);
+    width: 20rem;
+    height: auto;
+    min-height: 30rem;
+    background-color: white;
+    right: 10px;
+    top: 70px;
+
+  }
+
+  #Carrito:not(hover) #Dropdown-Carrito{
+
+    display: none;
+    box-shadow: 0 0.25rem 0.5625rem -0.0625rem rgba(0,0,0,.03), 0 0.275rem 1.25rem -0.0625rem rgba(0,0,0,.05);
+    width: 20rem;
+    height: auto;
+    min-height: 30rem;
+    background-color: white;
+    right: 10px;
+    top: 70px;
+
+  }
