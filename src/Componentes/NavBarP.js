@@ -8,7 +8,7 @@ export function NavBarP (){
             <nav class="navbar bg-white px-4 shadow py-0 " style={{position:'fixed', zIndex:'2000' , width:'100vw'}}>
                 <div class="container-fluid">
                     <div>
-                    <a class="navbar-brand"> <img src={imagen} style={{height:'70px', width:'150px'}}></img></a>
+                    <Link to="/" class="navbar-brand"> <img src={imagen} style={{height:'70px', width:'150px'}}></img></Link>
                     </div>
                     
                     <div  id="cont-search" className="d-flex justify-content-end justify-content-lg-between ">
