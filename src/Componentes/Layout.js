@@ -1,6 +1,6 @@
 
 import { NavBarP } from "./NavBarP"
-import { OffcanvasSide } from "./OffcanvasSide"
+import OffcanvasSide from "./OffcanvasSide"
 
 export function Layout(){
 

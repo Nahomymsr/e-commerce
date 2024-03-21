@@ -14,7 +14,6 @@ export function Card(props){
         <h5>{props.producto.title}</h5>
         <h6>{props.producto.price} usd</h6>
     </div>
-
 </div>
  );
 }

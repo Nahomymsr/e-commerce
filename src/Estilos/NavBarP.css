@@ -19,6 +19,12 @@
 
   }
 
+  #Dropdown-Carrito :hover{
+    display: block;
+  }
+
+
+
   #Carrito:not(hover) #Dropdown-Carrito{
 
     display: none;

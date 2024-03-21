@@ -1,7 +1,8 @@
 import { useState,useEffect } from "react";
 import '../Estilos/OffcanvasSide.css'
+import { memo } from "react";
 
-export function OffcanvasSide(){
+function OffcanvasSide(){
 
     const[Departamentos, SetDepartamentos] = useState([])
 
@@ -27,3 +28,5 @@ export function OffcanvasSide(){
     </aside>
     )
 }
+
+export default memo(OffcanvasSide)

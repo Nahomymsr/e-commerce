@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { GridProducts } from "./GridProducts";
 
+
 export function Departamento(props)
 {
     const [ListProducts,SetListProducts] = useState([])
@@ -20,8 +21,7 @@ export function Departamento(props)
         <h2 class="h3 mb-0 pt-3 me-3">{props.NombreDpto}</h2>
         <div class="pt-3"><a class="btn btn-outline-accent btn-sm" href="grocery-catalog.html">More products<i class="ci-arrow-right ms-1 me-n1"></i></a></div>
      </div>
-      {ListProducts.length > 0 ? <GridProducts ListaProductos = {ListProducts} /> : <div class="spinner-border text-primary" role="status">
-  <span class="sr-only"></span>
+      {ListProducts.length > 0 ? <GridProducts ListaProductos = {ListProducts} /> :<div class="spinner-border text-primary" role="status"><span class="sr-only"></span>
 </div>}
   </div>
   );
