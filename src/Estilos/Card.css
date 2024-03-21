@@ -4,3 +4,19 @@
     background: white;
     border-radius: 20px
 }
+
+.Pfont-size{
+    font-size: 1rem;
+}
+
+.trucar-text{
+    white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  
+}
+
+.size-button{
+    width: 2.5rem;
+    height: 2.5rem;
+}
