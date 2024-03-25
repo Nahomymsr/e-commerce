@@ -1,3 +1,5 @@
-export function Checkout(){
-    return(<div>Carrito en construccion</div>)
+export function Checkout({cart,setCart}){
+
+    
+    return(<div>{cart.map((elemento) => <div>Elemento</div>)}</div>)
 }

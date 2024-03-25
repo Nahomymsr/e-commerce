@@ -2,11 +2,11 @@
 import { NavBarP } from "./NavBarP"
 import OffcanvasSide from "./OffcanvasSide"
 
-export function Layout(){
+export function Layout(props){
 
     return(
         <div>
-            <NavBarP/>
+            <NavBarP cart={props.cart} setCart={props.setCart}/>
             <OffcanvasSide/>
         </div>
     )

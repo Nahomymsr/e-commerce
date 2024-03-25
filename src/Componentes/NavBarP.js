@@ -1,10 +1,21 @@
+import { useEffect } from "react"
 import imagen from "../assets/imagenes/logoshop.png"
 import '../Estilos/NavBarP.css'
 import { Link } from "react-router-dom"
 
-export function NavBarP (){
+export function NavBarP ({cart,setCart}){
+
+   
+
+    useEffect(()=>{
+        setCart(cart)
+        console.log(cart)
+
+    },[cart])
+
     return(
         <header className="shadow-sm">
+              
             <nav class="navbar bg-white px-4 shadow py-0 " style={{position:'fixed', zIndex:'2000' , width:'100vw'}}>
                 <div class="container-fluid">
                     <div>
@@ -50,13 +61,25 @@ export function NavBarP (){
                         <a class="navbar-tool-text d-none d-lg-grid" style={{textDecoration:'none', color:'#4b566b'}}><small>My Cart</small>$25.00</a>
                        
                         <div id="Dropdown-Carrito" className="position-absolute" >
-                            <div style={{height:"15rem"}}>
-                                Carrito
-                            </div>
 
-                            <Link to="/Checkout">
-                                    <button type="button" class="btn btn-primary">Ver carrito</button>
-                            </Link>
+                        
+
+
+                            <div style={{height:"25rem", overflowY:"auto",padding:"1rem"}}>
+                                    {cart.map((prod) =><div class="d-flex align-items-center"><a class="d-block" href="grocery-single.html"><img src={prod.image} width="64" alt="Product"/></a>
+                                <div class="ps-2">
+                                <h6 class="widget-product-title"><a style={{textDecoration:"none",color:"black"}}>{prod.title}</a></h6>
+                                <div class="widget-product-meta"><span class="text-accent me-2">{prod.price}<small>.00</small></span><span class="text-muted">{"x " + prod.cantidad}</span></div>
+                                </div>
+                       </div>)}  
+                            </div>
+                            
+                            <div className="d-flex justify-content-center aling-items-center">
+                                <Link to="/Checkout">
+                                        <button type="button" class="btn btn-primary m-3">Ver carrito</button>
+                                </Link>
+                                
+                            </div>
 
                         </div>
                         </div>

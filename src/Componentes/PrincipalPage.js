@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Departamento } from "./Departamento";
 
-export function PrincipalPage(){
+export function PrincipalPage({cart, setCart}){
 
     const[Departamentos, SetDepartamentos] = useState([])
 
@@ -16,7 +16,7 @@ export function PrincipalPage(){
     return(
         <div>
                 <div className="px-3 " >
-                {Departamentos.map((Dep) => <Departamento  NombreDpto={Dep}/>)}
+                {Departamentos.map((Dep) => <Departamento  cart={cart} setCart={setCart}  NombreDpto={Dep}/>)}
                 </div>
         </div>
     )

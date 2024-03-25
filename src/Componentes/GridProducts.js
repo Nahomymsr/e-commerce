@@ -1,21 +1,36 @@
-import { useEffect, useState } from "react"
+import { useEffect, useReducer, useState } from "react"
 import { Card } from "./Card"
+import { DptoReducer } from "../reducers/DptoReducer"
 
-export function GridProducts(props){
+export function GridProducts({ListaProductos, cart, setCart}){
   
    
-    const [ListaProd,SetListaProd]= useState([])
+    let ListaAct =[]
+    const [ListaProdXDpto, SetListProd] = useState([])
+ 
     
-
     useEffect(()=>{
-        SetListaProd(props.ListaProductos)
+
+        console.log("Se renderizo")
+
+         ListaProductos.map((producto) => {ListaAct.push({category: producto.category,
+            title:producto.title,
+            id: producto.id,
+            price: producto.price,
+            image:producto.image,
+            cantidad: Number(0)})
+        })
+
+        SetListProd(ListaAct)
         
     },[])
-    
+
+
+   
 
     return(
         <div className="row justify-content-center" style={{gridColumnGap:'10px', gridRowGap:'10px'}}>
-           {ListaProd.length > 0 && ListaProd.map((prod)=> <Card producto={prod}/>) }
+           {ListaProdXDpto.length > 0 && ListaProdXDpto.map((prod)=> <Card producto={prod}  cart={cart} setCart={setCart} />) }
         </div>
     )
 

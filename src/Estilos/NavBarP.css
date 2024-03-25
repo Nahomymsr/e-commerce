@@ -37,3 +37,17 @@
     top: 70px;
 
   }
+
+  .widget-cart-item {
+    position: relative;
+}
+
+.widget-product-title {
+  margin-bottom: 0.25rem;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.widget-product-meta {
+  font-size: .875rem;
+}

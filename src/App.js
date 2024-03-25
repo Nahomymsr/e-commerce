@@ -5,22 +5,25 @@ import { PrincipalPage } from './Componentes/PrincipalPage';
 import { BrowserRouter, Routes ,Route} from 'react-router-dom';
 import { Checkout } from './pages/Checkout';
 import { Register } from './pages/Register';
+import { useState } from 'react';
 
 
 
 function App() {
 
+    const[cart,setCart]= useState([])
+
  return(
   <BrowserRouter>
       
-      <Layout/>
+      <Layout  cart={cart} setCart={setCart}/>
 
       <Routes>
           <Route path="/" element={<section className="section bg-light" >
-          <PrincipalPage/></section>}/>
+          <PrincipalPage cart={cart} setCart={setCart}/></section>}/>
 
           <Route path="/Checkout" element={<section className="section bg-light" >
-          <Checkout/></section>}/>
+          <Checkout  cart={cart} setCart={setCart}/></section>}/>
 
           <Route path="/Register" element={<section className="section bg-light" >
           <Register/></section>}/>
