@@ -62,7 +62,7 @@ export function NavBarP ({cart,setCart}){
                         
                         </Link>
 
-                        <div id="Carrito" className="d-flex">
+                        <div id="Carrito" className="d-flex position-relative">
 
                         <a className="d-flex align-items-center me-3" style={{borderRadius:'36px', backgroundColor:'whitesmoke'}}>
                         <span class="navbar-tool-label position-absolute bagde-pdto">{numprod}</span>
