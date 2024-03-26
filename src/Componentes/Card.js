@@ -13,7 +13,7 @@ export function Card({producto,cart,setCart}){
 
         function Restar()
         {
-            if(product.cantidad == 1)
+            if(product.cantidad == 1 || product.cantidad ==0)
             {
                 const ActProd = {...product, cantidad:0}
 
