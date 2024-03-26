@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useState } from "react"
 import { Card } from "./Card"
-import { DptoReducer } from "../reducers/DptoReducer"
+
 
 export function GridProducts({ListaProductos, cart, setCart}){
   
